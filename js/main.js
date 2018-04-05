@@ -33,4 +33,4 @@ close_btn.onclick = function () {
 
 setTimeout(function () {
     popup.style.display = "block"
-},5000)
+},10000)
