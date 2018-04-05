@@ -1,7 +1,10 @@
 let start_btn = document.getElementById("start-btn")
 let el = document.getElementById("el")
+let close_btn = document.getElementById("close-btn")
+let popup = document.getElementById("popup")
 
 el.style.display = "none"
+popup.style.display = "none"
 
 start_btn.onclick = function (e) {
     el.style.display = "block"
@@ -24,6 +27,10 @@ post_search.onsubmit = function (e) {
     }
 }
 
+close_btn.onclick = function () {
+    popup.style.display = "none"
+}
+
 setTimeout(function () {
-    alert("Coucou")
+    popup.style.display = "block"
 },5000)
